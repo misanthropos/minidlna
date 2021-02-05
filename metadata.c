@@ -346,7 +346,7 @@ GetAudioMetadata(const char *path, const char *name)
 	else if( ends_with(path, ".ogg") || ends_with(path, ".oga") )
 	{
 		strcpy(type, "ogg");
-		m.mime = strdup("audio/ogg");
+		m.mime = strdup("audio/x-vorbis+ogg");
 	}
 	else if( ends_with(path, ".pcm") )
 	{
